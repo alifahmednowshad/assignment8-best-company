@@ -1,30 +1,38 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Info from '../Info/Info';
+import './Company.css';
 
 const Company = () => {
     const [companys, setCompanys] = useState([])
+
+    const [cart, setCart] = useState([])
 
     useEffect( () => {
         fetch('./companyData.JSON')
         .then(res => res.json())
         .then(data => setCompanys(data))
     }, [])
+
+    const buyBtn = (company) => {
+        const newCart = [...cart, company];
+        setCart(newCart);
+    }
+
     return (
         <div className='container p-0'>
-            <div class="d-flex row row-cols-1 row-cols-md-3 my-5">
+            <div class="d-flex row my-5">
                 <div className="col-lg-9">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row gy-4">
                 {
-                    companys.map(company => <Info company={company}></Info>)
+                    companys.map(company => <Info company={company} buyBtn={buyBtn}></Info>)
                 }
                  </div>
                 </div>
                 <div className="col-lg-3">
-                   <div class="card">
-                        <img src="..." class="card-img-top" alt="..."/>
+                   <div class="card cost-card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natura.</p>
+                            <Cart cart={cart}></Cart>
                         </div>
                     </div>
                 </div>

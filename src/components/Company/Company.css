@@ -1,0 +1,7 @@
+.cost-card{
+    background-image: linear-gradient(to top, rgba(0, 255, 64, 0.74) , rgba(0, 89, 255, 0.267));
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.cost-card:hover{
+    box-shadow: 0 4px 8px 0 rgb(0, 26, 255);
+}

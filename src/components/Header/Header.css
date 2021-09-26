@@ -1,0 +1,8 @@
+.hero-area{
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.61);
+    color: white;
+    text-align: center;
+}
