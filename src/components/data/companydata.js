@@ -5,7 +5,7 @@ const companyData = [
         company : 'Google',
         employees: 139995,
         sector : 'Technology',
-        revenue: 181.7,
+        revenue: 181,
         link: 'https://www.google.com/',
     },
     {   
@@ -23,7 +23,7 @@ const companyData = [
         company : 'Microsoft',
         employees: 182268,
         sector : 'Technology',
-        revenue: 41.7,
+        revenue: 41,
         link: 'https://www.microsoft.com/',
     },
     {   
@@ -32,7 +32,7 @@ const companyData = [
         company : 'Amazon',
         employees: 1335000,
         sector : 'Consumer Discretionary',
-        revenue: 113.1,
+        revenue: 113,
         link: 'https://www.amazon.com/',
     },
     {   
@@ -41,7 +41,7 @@ const companyData = [
         company : 'Apple',
         employees: 147000,
         sector : 'Technology',
-        revenue: 137.7,
+        revenue: 137,
         link: 'https://www.apple.com/',
     },
     {   
@@ -50,7 +50,7 @@ const companyData = [
         company : 'Samsung',
         employees: 287439,
         sector : 'Electronics',
-        revenue: 200.6,
+        revenue: 200,
         link: 'https://www.samsung.com/',
     },
     {   
@@ -59,7 +59,7 @@ const companyData = [
         company : 'Intel',
         employees:  110600.,
         sector : 'Technology',
-        revenue: 77.87,
+        revenue: 77,
         link: 'https://www.intel.com/',
     },
     {   
@@ -68,7 +68,7 @@ const companyData = [
         company : 'Walmart',
         employees: 2300000,
         sector : 'Retail',
-        revenue: 548.743,
+        revenue: 548,
         link: 'https://www.walmart.com/',
     },
     {   
@@ -87,7 +87,7 @@ const companyData = [
         company : 'Saudi Aramco',
         employees: 66800,
         sector : 'Oil and Gas',
-        revenue: 229.9,
+        revenue: 229,
         link: 'https://www.aramco.com/',
     },
     {   
@@ -96,7 +96,7 @@ const companyData = [
         company : 'Tesla',
         employees: 70757,
         sector : 'Automotive',
-        revenue: 31.54,
+        revenue: 31,
         link: 'https://www.tesla.com/',
     },
     {   
@@ -105,7 +105,7 @@ const companyData = [
         company : 'Alibaba',
         employees: 	117600,
         sector : 'E-commerce',
-        revenue: 72.3,
+        revenue: 72,
         link: 'https://www.alibaba.com/',
     },
     {   
@@ -114,7 +114,7 @@ const companyData = [
         company : 'Visa',
         employees: 20500 ,
         sector : 'Financial Services',
-        revenue: 21.85,
+        revenue: 21,
         link: 'https://www.visa.com/',
     },
     {   
@@ -123,7 +123,7 @@ const companyData = [
         company : 'Tencent',
         employees: 85858 ,
         sector : 'Conglomerate',
-        revenue: 73.56,
+        revenue: 73,
         link: 'https://www.tencent.com/',
     },
     {   
@@ -132,7 +132,7 @@ const companyData = [
         company : 'Paypal',
         employees: 26500,
         sector : 'Financial',
-        revenue: 21.45,
+        revenue: 21,
         link: 'https://www.paypal.com/',
     }
 ]

@@ -3,14 +3,12 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <div>
-      {/* This is hero area */}
+      // This is hero area
       <div className='container hero-area'>
-        <h2>Most Popular Compnay</h2>
+        <h2>Make Best Compnay Team</h2>
         <h5>Here is the rundown Top Company : Apple; Amazon; Google; Microsoft; Samsung; Walmart; Facebook; Apple.</h5>
-        <h1>Best-Performing Companies, 2021</h1>
+        <h1>Company Budget: <span className='fw-bold'>100 Billion</span></h1>
       </div>
-    </div>
   );
 };
 

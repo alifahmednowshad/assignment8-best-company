@@ -1,38 +1,44 @@
 import React, { useEffect, useState } from 'react';
-import Cart from '../Cart/Cart';
 import Info from '../Info/Info';
+import Hire from '../Hire/Hire';
 import './Company.css';
 
 const Company = () => {
-    const [companys, setCompanys] = useState([])
 
-    const [cart, setCart] = useState([])
+    const [infos, setInfos] = useState([]);
 
+    const [hire, setHire] = useState([]);
+
+//  Company data load 
     useEffect( () => {
         fetch('./companyData.JSON')
         .then(res => res.json())
-        .then(data => setCompanys(data))
+        .then(data => setInfos(data))
     }, [])
 
-    const buyBtn = (company) => {
-        const newCart = [...cart, company];
-        setCart(newCart);
+// button handle     
+    const revenueBtn = (info) => {
+        const newHire = [...hire, info];
+        setHire(newHire);
     }
 
     return (
+        // company details area 
         <div className='container p-0'>
-            <div class="d-flex row my-5">
-                <div className="col-lg-9">
-                <div class="row gy-4">
+            <div className="d-flex row my-5">
+                {/* company info area  */}
+                <div className="col-md-9">
+                <div className="row gy-4">
                 {
-                    companys.map(company => <Info company={company} buyBtn={buyBtn}></Info>)
+                    infos.map(info => <Info key={info.link} revenueBtn={revenueBtn} info={info}></Info>)
                 }
                  </div>
                 </div>
-                <div className="col-lg-3">
-                   <div class="card cost-card">
-                        <div class="card-body">
-                            <Cart cart={cart}></Cart>
+                {/* company hired area  */}
+                <div className="col-md-3">
+                   <div className="card hire-card">
+                        <div className="card-body">
+                            <Hire hire={hire}></Hire>
                         </div>
                     </div>
                 </div>
