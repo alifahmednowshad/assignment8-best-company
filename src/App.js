@@ -1,5 +1,4 @@
-import './App.css';
-import Header from './components/Header/Header';
+import './App.css';import Header from './components/Header/Header';
 import Company from './components/Company/Company';
 
 
@@ -13,3 +12,20 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
